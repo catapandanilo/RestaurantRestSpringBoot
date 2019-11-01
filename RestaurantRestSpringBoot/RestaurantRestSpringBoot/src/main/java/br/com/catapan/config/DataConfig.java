@@ -16,9 +16,9 @@ public class DataConfig {
 	public DataSource dataSource() {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
-		dataSource.setUrl("jdbc:mysql://localhost:3308/restaurant_rest_spring_boot?useTimezone=true&serverTimezone=UTC&useSSL=false");
-		dataSource.setUsername("danilo");
-		dataSource.setPassword("catapan");
+		dataSource.setUrl("jdbc:mysql://localhost:3306/restaurant_rest_spring_boot?useTimezone=true&serverTimezone=UTC&useSSL=false");
+		dataSource.setUsername("root");
+		dataSource.setPassword("");
 		return dataSource;
 	}
 
