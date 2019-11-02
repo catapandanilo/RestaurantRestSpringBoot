@@ -24,7 +24,7 @@ public class Order implements Serializable{
 	private Long id;
 	
 	@Column(name = "client_id", nullable = false, length = 180)
-	private String clientId;
+	private Long clientId;
 	
 	@Column(name = "order_date", nullable = false)
 	@Temporal(TemporalType.DATE)
@@ -47,11 +47,11 @@ public class Order implements Serializable{
 		this.id = id;
 	}
 
-	public String getClientId() {
+	public Long getClientId() {
 		return clientId;
 	}
 
-	public void setClientId(String clientId) {
+	public void setClientId(Long clientId) {
 		this.clientId = clientId;
 	}
 

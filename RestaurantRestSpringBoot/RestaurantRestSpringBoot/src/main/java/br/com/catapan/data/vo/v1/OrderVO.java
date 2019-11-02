@@ -17,7 +17,7 @@ public class OrderVO extends ResourceSupport implements Serializable{
 	@Mapping("id")
 	@JsonProperty("id")
 	private Long key;
-	private String clientId;
+	private Long clientId;
 	private Date orderDate;
 	private Boolean progress;
 	private String observation;
@@ -33,11 +33,11 @@ public class OrderVO extends ResourceSupport implements Serializable{
 		this.key = key;
 	}
 
-	public String getClientId() {
+	public Long getClientId() {
 		return clientId;
 	}
 
-	public void setClientId(String clientId) {
+	public void setClientId(Long clientId) {
 		this.clientId = clientId;
 	}
 

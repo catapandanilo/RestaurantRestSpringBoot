@@ -16,8 +16,8 @@ public class OrderProductVO extends ResourceSupport implements Serializable{
 	@Mapping("id")
 	@JsonProperty("id")
 	private Long key;
-	private String orderId;
-	private String productId;
+	private Long orderId;
+	private Long productId;
 	private Integer quantity;
 	
 	public OrderProductVO() {
@@ -31,19 +31,19 @@ public class OrderProductVO extends ResourceSupport implements Serializable{
 		this.key = key;
 	}
 
-	public String getOrderId() {
+	public Long getOrderId() {
 		return orderId;
 	}
 
-	public void setOrderId(String orderId) {
+	public void setOrderId(Long orderId) {
 		this.orderId = orderId;
 	}
 
-	public String getProductId() {
+	public Long getProductId() {
 		return productId;
 	}
 
-	public void setProductId(String productId) {
+	public void setProductId(Long productId) {
 		this.productId = productId;
 	}
 

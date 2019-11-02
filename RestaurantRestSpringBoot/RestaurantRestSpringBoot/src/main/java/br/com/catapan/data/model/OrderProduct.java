@@ -20,11 +20,12 @@ public class OrderProduct implements Serializable{
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	@Column(name = "order_id", nullable = false, length = 180)
-	private String orderId;
+	@Column(name = "order_id", nullable = false)
+	private Long orderId;
 	
-	@Column(name = "product_id", nullable = false, length = 180)
-	private String productId;
+	@Column(name = "product_id", nullable = false)
+	private Long productId;
+	
 	
 	@Column(nullable = false)
 	private Integer quantity;
@@ -40,19 +41,19 @@ public class OrderProduct implements Serializable{
 		this.id = id;
 	}
 
-	public String getOrderId() {
+	public Long getOrderId() {
 		return orderId;
 	}
 
-	public void setOrderId(String orderId) {
+	public void setOrderId(Long orderId) {
 		this.orderId = orderId;
 	}
 
-	public String getProductId() {
+	public Long getProductId() {
 		return productId;
 	}
 
-	public void setProductId(String productId) {
+	public void setProductId(Long productId) {
 		this.productId = productId;
 	}
 
